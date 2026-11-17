@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:clipChildren="false">
 
-    <net.sourceforge.opencamera.op.ui.OpFocusRing
+    <com.shahzeb.scamera.op.ui.OpFocusRing
         android:id="@+id/op_focus_ring"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -19,7 +19,7 @@
         android:background="@drawable/op_top_scrim"
         android:orientation="vertical">
 
-        <net.sourceforge.opencamera.op.ui.OpTopBar
+        <com.shahzeb.scamera.op.ui.OpTopBar
             android:id="@+id/op_top_bar"
             android:layout_width="match_parent"
             android:layout_height="52dp" />
@@ -57,7 +57,7 @@
             android:visibility="gone" />
     </LinearLayout>
 
-    <net.sourceforge.opencamera.op.ui.OpHistogramView
+    <com.shahzeb.scamera.op.ui.OpHistogramView
         android:id="@+id/op_histogram"
         android:layout_width="104dp"
         android:layout_height="58dp"
@@ -90,25 +90,25 @@
         android:orientation="vertical"
         android:paddingTop="12dp">
 
-        <net.sourceforge.opencamera.op.ui.OpProPanel
+        <com.shahzeb.scamera.op.ui.OpProPanel
             android:id="@+id/op_pro_panel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="gone" />
 
-        <net.sourceforge.opencamera.op.ui.OpChipStrip
+        <com.shahzeb.scamera.op.ui.OpChipStrip
             android:id="@+id/op_chips"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="2dp"
             android:visibility="gone" />
 
-        <net.sourceforge.opencamera.op.ui.OpZoomBar
+        <com.shahzeb.scamera.op.ui.OpZoomBar
             android:id="@+id/op_zoom_bar"
             android:layout_width="match_parent"
             android:layout_height="52dp" />
 
-        <net.sourceforge.opencamera.op.ui.OpModeCarousel
+        <com.shahzeb.scamera.op.ui.OpModeCarousel
             android:id="@+id/op_mode_carousel"
             android:layout_width="match_parent"
             android:layout_height="40dp" />
@@ -118,7 +118,7 @@
             android:layout_width="match_parent"
             android:layout_height="108dp">
 
-            <net.sourceforge.opencamera.op.ui.OpGalleryButton
+            <com.shahzeb.scamera.op.ui.OpGalleryButton
                 android:id="@+id/op_gallery"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
@@ -138,7 +138,7 @@
                 android:src="@drawable/op_ic_pause"
                 android:visibility="gone" />
 
-            <net.sourceforge.opencamera.op.ui.OpShutterButton
+            <com.shahzeb.scamera.op.ui.OpShutterButton
                 android:id="@+id/op_shutter"
                 android:layout_width="82dp"
                 android:layout_height="82dp"
@@ -171,7 +171,7 @@
         </FrameLayout>
     </LinearLayout>
 
-    <net.sourceforge.opencamera.op.ui.OpMoreSheet
+    <com.shahzeb.scamera.op.ui.OpMoreSheet
         android:id="@+id/op_more_sheet"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

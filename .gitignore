@@ -24,3 +24,14 @@ testdata/
 
 local.properties
 uninstall.bat
+
+.superpowers/
+verification/
+*.jks
+*.keystore
+.build-home/
+camera/release/
+
+*.log
+phone-camera-*.txt
+S-Camera-source.zip
