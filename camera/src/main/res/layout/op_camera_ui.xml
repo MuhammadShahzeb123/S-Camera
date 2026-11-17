@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- OnePlus style camera overlay, shared by MainActivity (classic engine) and StudioActivity. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/op_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <net.sourceforge.opencamera.op.ui.OpFocusRing
+        android:id="@+id/op_focus_ring"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/op_top_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/op_top_scrim"
+        android:orientation="vertical">
+
+        <net.sourceforge.opencamera.op.ui.OpTopBar
+            android:id="@+id/op_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp" />
+
+        <TextView
+            android:id="@+id/op_rec_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/op_rec_badge_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="00:00"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-medium"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/op_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/op_pill_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <net.sourceforge.opencamera.op.ui.OpHistogramView
+        android:id="@+id/op_histogram"
+        android:layout_width="104dp"
+        android:layout_height="58dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="96dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/op_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/op_pill_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/op_bottom_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/op_bottom_scrim"
+        android:orientation="vertical"
+        android:paddingTop="12dp">
+
+        <net.sourceforge.opencamera.op.ui.OpProPanel
+            android:id="@+id/op_pro_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <net.sourceforge.opencamera.op.ui.OpChipStrip
+            android:id="@+id/op_chips"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone" />
+
+        <net.sourceforge.opencamera.op.ui.OpZoomBar
+            android:id="@+id/op_zoom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp" />
+
+        <net.sourceforge.opencamera.op.ui.OpModeCarousel
+            android:id="@+id/op_mode_carousel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <FrameLayout
+            android:id="@+id/op_shutter_row"
+            android:layout_width="match_parent"
+            android:layout_height="108dp">
+
+            <net.sourceforge.opencamera.op.ui.OpGalleryButton
+                android:id="@+id/op_gallery"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="40dp" />
+
+            <ImageButton
+                android:id="@+id/op_pause"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/op_circle_button_bg"
+                android:contentDescription="Pause"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/op_ic_pause"
+                android:visibility="gone" />
+
+            <net.sourceforge.opencamera.op.ui.OpShutterButton
+                android:id="@+id/op_shutter"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center" />
+
+            <ImageButton
+                android:id="@+id/op_switch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/op_circle_button_bg"
+                android:contentDescription="Switch camera"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/op_ic_cameraswitch" />
+
+            <ImageButton
+                android:id="@+id/op_snapshot"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/op_circle_button_bg"
+                android:contentDescription="Take photo"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/op_ic_photo_camera"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <net.sourceforge.opencamera.op.ui.OpMoreSheet
+        android:id="@+id/op_more_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</FrameLayout>

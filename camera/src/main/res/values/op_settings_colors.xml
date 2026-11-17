@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="op_settings_background">#0C0D10</color>
+    <color name="op_settings_surface">#1A1C21</color>
+    <color name="op_settings_text">#F5F6F8</color>
+    <color name="op_settings_text_disabled">#858A95</color>
+    <color name="op_settings_summary_text">#B6BAC4</color>
+    <color name="op_settings_summary_disabled">#747985</color>
+    <color name="op_settings_section">#D5D8E0</color>
+</resources>
